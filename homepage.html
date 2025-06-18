@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d0e8431583.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>Orbitz</title>
+  </head>
+
+  <body>
+    <header id="main-logo" class="grid-con">
+      <h1 class="hidden">Orbitz Drink homepage</h1>
+      <div id="logo-desk">
+        <div class="col-span-2 m-col-start-1 m-col-end-2 box_logo" id="logo">
+          <img src="images/orbitz_logo.png" alt="Orbitz Logo" />
+        </div>
+      </div>
+      <nav id="main-nav" class="m-col-start-4 m-col-end-11">
+        <h2 class="hidden">Navigation</h2>
+        <div class="pill-nav">
+          <a class="active" href="homepage.html">Unvierses</a>
+          <a href="new.html">News</a>
+          <a href="#product">Products</a>
+          <a href="#about">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+   <section id="hero-con">
+  <h2 class="hidden">News Slideshow</h2>
+  <div class="hero-slide-wrapper">
+    <div class="hero-slide">
+      <img class="mySlides" src="images/hero3-03.png" alt="hero1"/>
+      <img class="mySlides" src="images/hero1-01.png" alt="hero2"/>
+      <img class="mySlides" src="images/hero2-02.png" alt="hero3" />
+      <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+    <section id="products" class="products_intro grid-con">
+      <div class="m-col-start-4 m-col-end-11">
+        <h2 class="hidden">Drink</h2>
+        <p class="choose_one">Choose your galaxy</p>
+        <div class="img-holder">
+          <div>
+            <img class="flavor-img" src="images/can1.png" alt="MilkyWay" />
+          <h3>Cherry-Rashberry</h3>
+          </div>
+          <div>
+        <img class="flavor-img" src="images/can2.png" alt="Triangulum" />
+        <h3>Blueberry-Strawberry</h3>
+        </div>
+        <div>
+        <img class="flavor-img" src="images/can3.png" alt="Whirlpool" />
+        <h3>Mango-Strawberry</h3>
+        </div>
+        </div>
+        <div class="img-holder">
+          <div>
+        <img class="flavor-img" src="images/can4.png" alt="Cosmos" />
+        <h3>Bluebery-Cotton Candy</h3>
+        </div>
+        <div>
+        <img class="flavor-img" src="images/can5.png" alt="Stellar Spectrum" />
+        <h3>Banana-Coconut</h3>
+        </div>
+        <div>
+        <img class="flavor-img" src="images/can6.png" alt="Galatic" />
+        <h3>Orange-Apple</h3>
+        </div>
+        </div>
+      </div>
+      <div class="m-col-start-6">
+        <button class="glow-on-hover l-col-start-6" type="button">
+          MORE PRODUCTS
+        </button>
+      </div>
+      <div class="m-col-start-4 m-col-end-11">
+        <h2 class="hidden">Social Information</h2>
+        <p class="where_to">Where to find us</p>
+      </div>
+      <div class="m-col-start-5 m-col-end-11 social-icon">
+        <i class="fa fa-twitter fa-4x icon-3d"></i>
+        <i class="fa fa-facebook fa-4x icon-3d"></i>
+        <i class="fa fa-instagram fa-4x icon-3d"></i>
+        <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+      </div>
+    </section>
+
+    <footer id="footer-hero-desk" class="grid-con">
+        <section id="footer-contact-info" class="l-col-start-2 l-col-span-3">
+            <h2 class="hidden">Contact Information</h2>
+            <img src="images/orbitz_logo.png" alt="orbitz_logo">
+            <p>
+                Toll Free: +1 548 XXX-XXXX<br>
+                Fax: +1 61X 6XX 2XXX<br>
+                Email: info[at]orbitz.com
+            </p>
+        </section>
+
+        <section class="l-col-start-5 l-col-end-9">
+            <h3 class="hidden">Follow Us</h3>
+            <nav class="grid-room-desk">
+                <h2 class="hidden">Navigation</h2>
+                <div class="footer-desk-con">
+                    <ul>
+                        <li><a href="#">Unvierses</a></li>
+                        <li><a href="#">Promotion</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-desk-con l-col-start-2">
+                    <ul>
+                        <li><a href="#">Collaboration</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <div id="contact-now-footer" class=" l-col-start-10 l-col-span-2">
+            <a href="contact.html"><p>CONTACT US</p></a>
+        </div>
+
+        <div id="footer-privacy-desk" class="l-col-span-full line-separator">
+            <p id="price-policy">
+               <br><br> &copy;Orbitz Soda Company
+                All Rights Reserved Terms of Use Privacy Policy Cookies Policy Do Not Sell or Share My Personal Information
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
     
-</body>
+  </body>
 </html>
