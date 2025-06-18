@@ -1,11 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d0e8431583.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>Orbitz</title>
+  </head>
+
+  <body>
+    <header id="main-logo" class="grid-con">
+      <h1 class="hidden">Orbitz Drink contact</h1>
+      <div id="logo-desk">
+        <div class="col-span-2 m-col-start-1 m-col-end-2 box_logo" id="logo">
+          <img src="images/orbitz_logo.png" alt="Orbitz Logo" />
+        </div>
+      </div>
+      <nav id="main-nav" class="m-col-start-4 m-col-end-11">
+        <h2 class="hidden">Navigation</h2>
+        <div class="pill-nav">
+          <a class="active" href="homepage.html">Unvierses</a>
+          <a href="new.html">News</a>
+          <a href="#product">Products</a>
+          <a href="#about">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+<section id="contact-form"> 
+  <form>
+	    <h1>Should you have any questions, please do not hesitate to contact us :</h1>
+	    
+    <div class="contentform">
+    	<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+    	<div class="leftcontact">
+			      <div class="form-group">
+			        <p>Surname<span>*</span></p>
+			        <span class="icon-case"><i class="fa fa-male"></i></span>
+				        <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                <div class="validation"></div>
+       </div> 
+
+            <div class="form-group">
+            <p>Name <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-user"></i></span>
+				<input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>E-mail <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                <div class="validation"></div>
+			</div>	
+
+			<div class="form-group">
+			<p>Company <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-home"></i></span>
+				<input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Company Address <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+				<input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Postcode <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
+				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>	
+
+
+
+	</div>
+
+	<div class="rightcontact">	
+
+			<div class="form-group">
+			<p>City <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-building-o"></i></span>
+				<input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>	
+
+			<div class="form-group">
+			<p>Phone number <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-phone"></i></span>
+				<input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Function <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-info"></i></span>
+                <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Subject <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-comment-o"></i></span>
+                <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+		
+			<div class="form-group">
+			<p>Message <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
+                <div class="validation"></div>
+			</div>	
+	</div>
+	</div>
+    <button type="submit" class="bouton-contact">Send</button>
+    </form>	
+</section>
+
+<footer id="footer-hero-desk" class="grid-con">
+        <section id="footer-contact-info" class="l-col-start-2 l-col-span-3">
+            <h2 class="hidden">Contact Information</h2>
+            <img src="images/orbitz_logo.png" alt="orbitz_logo">
+            <p>
+                Toll Free: +1 548 XXX-XXXX<br>
+                Fax: +1 61X 6XX 2XXX<br>
+                Email: info[at]orbitz.com
+            </p>
+        </section>
+
+        <section class="l-col-start-5 l-col-end-9">
+            <h3 class="hidden">Follow Us</h3>
+            <nav class="grid-room-desk">
+                <h2 class="hidden">Navigation</h2>
+                <div class="footer-desk-con">
+                    <ul>
+                        <li><a href="#">Unvierses</a></li>
+                        <li><a href="#">Promotion</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-desk-con l-col-start-2">
+                    <ul>
+                        <li><a href="#">Collaboration</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <div id="contact-now-footer" class=" l-col-start-10 l-col-span-2">
+            <a href="contact.html"><p>CONTACT US</p></a>
+        </div>
+
+        <div id="footer-privacy-desk" class="l-col-span-full line-separator">
+            <p id="price-policy">
+               <br><br> &copy;Orbitz Soda Company
+                All Rights Reserved Terms of Use Privacy Policy Cookies Policy Do Not Sell or Share My Personal Information
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
     
 </body>
 </html>
